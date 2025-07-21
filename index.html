@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GagneTonTemps - Landing Page</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #121212; color: #fff; line-height: 1.6; }
+    header {
+      background-image: url('https://via.placeholder.com/1600x500.png?text=GagneTonTemps');
+      background-size: cover;
+      background-position: center;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1e1e1e;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .intro h1 { font-size: 3rem; }
+    .intro p { font-size: 1.2rem; margin-top: 1rem; color: #ccc; }
+    .intro .cta {
+      margin-top: 2rem;
+    }
+    .cta a {
+      background: #ff4c4c;
+      padding: 1rem 2rem;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+    .feature {
+      background: #2a2a2a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .feature img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .feature h3 {
+      margin: 1rem 0 0.5rem;
+      color: #ff4c4c;
+    }
+
+    .about {
+      background: #1c1c1c;
+      padding: 3rem 2rem;
+      border-radius: 10px;
+    }
+
+    .about p {
+      margin-bottom: 1rem;
+      color: #ccc;
+    }
+
+    .socials a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #ff4c4c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #999;
+      background: #1e1e1e;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#features">Fonctionnalités</a>
+    <a href="#about">À propos</a>
+    <a href="#project">Voir le projet</a>
+  </nav>
+
+  <!-- Intro -->
+  <header class="intro">
+    <h1>🎬 GagneTonTemps</h1>
+    <p>Découvre un film qui te correspond en un clic</p>
+    <div class="cta">
+      <a href="https://ton-site-deployé.com" id="project">Accéder à l'application</a>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features">
+    <h2 style="text-align:center; margin-bottom:2rem;">🔍 Fonctionnalités clés</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Films récents</h3>
+        <p>Découvre les dernières sorties en un coup d'œil sur la page d'accueil.</p>
+      </div>
+      <div class="feature">
+        <h3>Recherche intelligente</h3>
+        <p>Sélectionne tes préférences et laisse l’algorithme choisir un film pour toi.</p>
+      </div>
+      <div class="feature">
+        <h3>Critiques communautaires</h3>
+        <p>Consulte ou poste des avis sur les films. Accessible après connexion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 style="text-align:center; margin-bottom:2rem;">📖 À propos du projet</h2>
+    <div class="about">
+      <p>
+        L’idée de ce projet est née d’une frustration personnelle : passer trop de temps à chercher un film sans jamais se décider.
+        Je voulais une expérience rapide, intuitive et surtout personnalisée. D’où “GagneTonTemps” : une app qui t’aide à trouver LE film parfait.
+      </p>
+      <p>
+        Ce projet a été réalisé dans le cadre de mon Portfolio pour l’école Holberton, mais aussi comme un outil personnel que j’utilise réellement.
+      </p>
+      <p>
+        📅 Projet lancé en 2025 – développé avec HTML/CSS et Python/Django.
+      </p>
+      <p>
+        🔗 <a href="https://github.com/Ashevita/Landing-page" target="_blank" style="color:#ff4c4c;">Voir le code source sur GitHub</a>
+      </p>
+      <div class="socials">
+        👤 Auteur : Mille Henri<br><br>
+        <a href="https://www.linkedin.com/in/henri-mille/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Ashevita" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 GagneTonTemps – Projet Portfolio HolbertonSchool
+  </footer>
+
+</body>
+</html>
 
